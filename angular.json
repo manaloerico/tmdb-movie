@@ -105,6 +105,37 @@
           }
         }
       }
+    },
+    "tmdb-movie": {
+      "projectType": "library",
+      "root": "projects/tmdb-movie",
+      "sourceRoot": "projects/tmdb-movie/src",
+      "prefix": "lib",
+      "architect": {
+        "build": {
+          "builder": "@angular-devkit/build-angular:ng-packagr",
+          "options": {
+            "project": "projects/tmdb-movie/ng-package.json"
+          },
+          "configurations": {
+            "production": {
+              "tsConfig": "projects/tmdb-movie/tsconfig.lib.prod.json"
+            },
+            "development": {
+              "tsConfig": "projects/tmdb-movie/tsconfig.lib.json"
+            }
+          },
+          "defaultConfiguration": "production"
+        },
+        "test": {
+          "builder": "@angular-devkit/build-angular:karma",
+          "options": {
+            "main": "projects/tmdb-movie/src/test.ts",
+            "tsConfig": "projects/tmdb-movie/tsconfig.spec.json",
+            "karmaConfig": "projects/tmdb-movie/karma.conf.js"
+          }
+        }
+      }
     }
   }
 }
