@@ -25,7 +25,9 @@
     "paths": {
       "tmdb-movie": [
         "dist/tmdb-movie"
-      ]
+      ],
+      "@tmdb-movie/lib/services/*":["./projects/tmdb-movie/src/lib/services/*"],
+      "@tmdb-movie/services/*":["./projects/tmdb-movie/services/*"]
     }
   },
   "angularCompilerOptions": {

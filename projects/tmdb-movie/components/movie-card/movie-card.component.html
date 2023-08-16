@@ -1,0 +1,18 @@
+<div class="mat-card-container">
+<mat-card class="movie-card">
+  <img
+    mat-card-image
+    [src]="'https://image.tmdb.org/t/p/w220_and_h330_face' + data.poster_path"
+    [alt]="data.original_title"
+  />
+  <div class="movie-details">
+    <mat-card-subtitle>
+      <div class="rating-text">
+        <mat-icon>star</mat-icon>{{ data.vote_average }}
+      </div>
+      <div>{{ data.release_date | date:'yyyy' }}</div>
+    </mat-card-subtitle>
+    <mat-card-title>{{ data.original_title }}</mat-card-title>
+  </div>
+</mat-card>
+</div>

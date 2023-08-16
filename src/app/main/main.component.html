@@ -1,3 +1,7 @@
-<p>
-  main works!
-</p>
+<div class="movie-card-container">
+  <ng-container *ngIf="movieList$ | async as movieList">
+    <ng-container *ngFor="let m of movieList">
+      <movie-card [data]="m"></movie-card>
+    </ng-container>
+  </ng-container>
+</div>
