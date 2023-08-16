@@ -1,0 +1,54 @@
+@import "~@angular/material/prebuilt-themes/indigo-pink.css";
+:host {
+  width: auto;
+  background: #1e2129;
+  color: #8e95a5;
+  :hover{
+    cursor: pointer;
+  }
+  .mat-card-container{ 
+    background: rgba(255, 255, 255, 0.05);
+    height: 100%;
+  .movie-card {
+    box-shadow: unset !important;
+    background:transparent;    
+    .movie-details{
+      margin: -6px
+    }
+    mat-card-subtitle {
+      color: #aaa;
+      display: flex;
+      flex-direction: row;
+      place-content: center flex-start;
+      align-items: center;
+      margin-bottom: 10px;
+      gap: 5px;
+      .rating-text {
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        place-content: center;
+        gap: 0.25rem;
+        mat-icon {
+          color: #00acc1;
+          font-size: 15px;
+          height: 15px;
+          width: 15px;
+        }
+      }
+    }
+    mat-card-title {
+      font-size: 13px;
+      line-height: 1.3em;
+      margin: 0;
+      // margin-bottom: 10px;
+      // height: 36px;
+      display: -webkit-box;
+      -webkit-line-clamp: 2;
+      -webkit-box-orient: vertical;
+      overflow: hidden;
+      color: #fff;
+    }
+  }
+}
+}
