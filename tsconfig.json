@@ -24,10 +24,9 @@
     ],
     "paths": {
       "tmdb-movie": [
-        "dist/tmdb-movie"
+        // "dist/tmdb-movie"
+        "./projects/tmdb-movie/src/public_api.ts"
       ],
-      "@tmdb-movie/lib/services/*":["./projects/tmdb-movie/src/lib/services/*"],
-      "@tmdb-movie/services/*":["./projects/tmdb-movie/services/*"]
     }
   },
   "angularCompilerOptions": {

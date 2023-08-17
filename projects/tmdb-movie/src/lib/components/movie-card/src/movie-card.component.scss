@@ -3,12 +3,14 @@
   width: auto;
   background: #1e2129;
   color: #8e95a5;
+  border-radius: 4px !important;
   :hover{
     cursor: pointer;
   }
   .mat-card-container{ 
     background: rgba(255, 255, 255, 0.05);
     height: 100%;
+    border-radius: 4px;
   .movie-card {
     box-shadow: unset !important;
     background:transparent;    

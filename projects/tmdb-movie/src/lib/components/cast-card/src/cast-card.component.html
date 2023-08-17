@@ -1,0 +1,19 @@
+<div class="mat-card-container">
+  <mat-card class="cast-card">
+    <img
+      mat-card-image
+      [src]="
+        'https://image.tmdb.org/t/p/w138_and_h175_face' + data.profile_path
+      "
+      [alt]="data.original_title"
+      *ngIf="data.profile_path; else userTmp"
+    />
+    <div class="cast-details">
+      <mat-card-title>{{ data.original_name }}</mat-card-title>
+      <mat-card-subtitle>{{ data.character }} </mat-card-subtitle>
+    </div>
+  </mat-card>
+</div>
+<ng-template #userTmp>
+  <img mat-card-image [src]="'/assets/images/user.svg'" [alt]="'user'" />
+</ng-template>

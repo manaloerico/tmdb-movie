@@ -1,0 +1,7 @@
+<p>Top Billed Cast</p>
+
+<div class="card-container" *ngIf="cast$ | async as cast">
+  <ng-container *ngFor="let c of cast">
+    <cast-card [data]="c"></cast-card
+  ></ng-container>
+</div>
