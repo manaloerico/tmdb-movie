@@ -1,6 +1,6 @@
 import { HTTP_INTERCEPTORS } from '@angular/common/http';
 import { NgModule } from '@angular/core';
-import { RequestInterceptorService } from './services/request-interceptor.service';
+import { RequestInterceptorService } from './services/common/request-interceptor.service';
 
 @NgModule({
   declarations: [],

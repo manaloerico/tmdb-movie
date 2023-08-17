@@ -11,3 +11,4 @@ import { MatIconModule } from '@angular/material/icon';
   exports: [MovieCardComponent],
 })
 export class MovieCardModule {}
+

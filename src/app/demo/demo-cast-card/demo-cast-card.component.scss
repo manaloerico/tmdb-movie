@@ -1,0 +1,16 @@
+:host{  
+    width: auto;
+    height: 100vh;
+    
+    padding:50px;
+    display: block;
+
+    .card-container{
+        display:flex;
+        flex-direction:  row;
+        flex-wrap: wrap;
+        gap:10px;
+    }
+
+    
+}
