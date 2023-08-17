@@ -5,7 +5,7 @@ export interface MovieApiResults {
   total_results: number;
 }
 export interface DiscoverResults extends MovieApiResults {}
-export interface NowPlayingResults extends MovieApiResults {}
+export interface PopularResults extends MovieApiResults {}
 export interface TopRatedResults extends MovieApiResults {}
 export interface SimilarResults extends MovieApiResults {}
 export interface RecommendationResults extends MovieApiResults {
