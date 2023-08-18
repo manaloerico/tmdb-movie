@@ -1,8 +1,7 @@
 import { HttpClient } from '@angular/common/http';
 import { Injectable } from '@angular/core';
 import { Observable } from 'rxjs';
-import { map } from 'rxjs/operators';
-import { VideoApiResults } from 'tmdb-movie';
+import { map } from 'rxjs/operators'; 
 import {
   CreditsResult,
   MovieDetails,
@@ -10,6 +9,7 @@ import {
   RecommendationResults,
   SimilarResults,
   Video,
+  VideoApiResults,
 } from '../../../../interface/movies.model';
 
 @Injectable({
